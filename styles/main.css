@@ -2,9 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
 }
+
+header {
+    position: fixed;
+    z-index: 20;
+}
+/* TOP NAVBAR STYLES */
 nav.navbar {
-    height: 3.5rem;
+    height: 3.8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,7 +28,7 @@ nav.navbar .left-container, .right-container {
 }
 
 
-/* LEFT SIDE COMPONENTS IN NAVBAR */
+/* LEFT SIDE COMPONENTS IN NAVBAR STYLES */
 nav.navbar .left-container .logo-container {
     height: 3.3rem;
     width: auto;
@@ -36,11 +44,11 @@ nav.navbar .left-container .nav-items {
     display: flex;
 }
 nav.navbar .left-container .nav-items .nav-link {
-    color: #fff;
+    color: #ddd;
     padding: 0 1.2rem;
     display: block;
     height: 100%;
-    line-height: 3.5;
+    line-height: 3.8rem;
     text-decoration: none;
 }
 
@@ -93,7 +101,7 @@ nav.navbar .left-container .nav-items .nav-link:hover{
 }
 
 
-/* RIGHT SIDE COMPONENTS IN NAVBAR */
+/* RIGHT SIDE COMPONENTS IN NAVBAR STYLES */
 nav.navbar .right-container > *{
     display: flex;
     align-items: center;
@@ -102,7 +110,7 @@ nav.navbar .right-container > *{
 }
 nav.navbar .right-container .nav-link, .auth-link{
     height: 2.5rem;
-    color: #fff;
+    color: #ddd;
     padding: 0 1.2rem;
     border: none;
     border-radius: 2rem;
@@ -147,16 +155,20 @@ nav.navbar .right-container .nav-link:hover{
     background-color: #059862;
     color: #fff;
 }
+/* -------------End of Main Navbar styles --------- */
+/* ----------------------------------------------------- */
 
 
-/* SUB NAVBAR STYLING */
+
+/* SUB NAVBAR STYLES */
 nav.sub-navbar {
     position: relative;
     height: 2rem;
     background-color: #333;
     display: flex;
     align-items: center;
-
+    overflow-x: scroll;
+    scrollbar-width: none;
 } 
 
 nav.sub-navbar .language {
@@ -164,8 +176,8 @@ nav.sub-navbar .language {
     text-transform: uppercase;
     text-decoration: none;
     text-wrap: nowrap;
-    color: #fff;
-    padding: 0 0.85rem;
+    color: #ddd;
+    padding: 0 0.95rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,3 +189,43 @@ nav.sub-navbar .language:hover{
 nav.sub-navbar .language.active {
     background-color: #04AA6D;
 }
+
+/* -------------End of Sub Navbar styles --------- */
+/* ----------------------------------------------------- */
+
+
+
+/* SIDEBAR STYLES */
+aside.sidebar {
+    position: fixed;
+    top: 5.8rem;
+    width: 220px;
+    height: calc(100svh - 5.8rem);
+    background-color: #15202b;
+    display: flex;
+    flex-direction: column;
+}
+aside.sidebar p{
+    font-size: 1.1rem;
+    color: #ddd;
+    padding: 1.5rem 1px 0.6rem 16px;
+
+}
+
+aside.sidebar a{
+    text-decoration: none;
+    color: #ddd;
+    padding: 4px 1px 4px 16px;
+    font-weight: lighter;
+}
+aside.sidebar a:hover {
+    background-color: #38444d;
+}
+aside.sidebar a.active {
+    background-color: #04AA6D;
+}
+
+/* -------------End of Sidebar styles --------- */
+/* ----------------------------------------------------- */
+
+
