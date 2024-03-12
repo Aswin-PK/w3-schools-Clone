@@ -329,10 +329,18 @@ main .example-box .code, .output {
     overflow: scroll;
     scrollbar-width: none;
 }
-
 main .example-box .code {
     background-color: #15202b;
     color: #f2f2f2c5;
 }
+main .example-box .code code {
+    all: inherit;
+    font-size: 1.2rem;
+}
+
+main .example-box .output > * {
+    font-size: 1.2rem;
+}
+
 /* -------------End of main block styles --------- */
 /* ----------------------------------------------------- */
