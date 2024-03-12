@@ -220,7 +220,6 @@ aside.sidebar a{
     text-decoration: none;
     color: #ddd;
     padding: 4px 1px 4px 16px;
-    font-weight: lighter;
 }
 aside.sidebar a:hover {
     background-color: #38444d;
@@ -288,7 +287,7 @@ main > p, h3 {
 
 main h3 {
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 main ul {
     margin: 1rem 4rem;
